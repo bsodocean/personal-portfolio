@@ -1,0 +1,64 @@
+.portfolio_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+ #portfolio > h5 {
+    padding-top: 5rem;
+}
+
+.portfolio_item {
+    background-color: var(--color-secondary);
+    padding: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+
+
+.portfolio_item > h3 {
+    margin: 1rem 0 2rem;
+    color: var(--color-primary);
+}
+
+
+.portfolio_item:hover {
+    border-color: var(--color-secondary);
+}
+
+.portfolio_item-img {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.cta_btns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .about_me-text > p {
+        font-size: 0.95rem;
+        max-width: 49rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .portfolio_item {
+        width: var(--container-width-md);
+    }
+
+    .btn {
+        padding: 0.5rem 0.8rem;
+    }
+}

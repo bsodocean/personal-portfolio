@@ -1,0 +1,73 @@
+#about {
+    background: repeating-linear-gradient(45deg, rgba(194, 194, 194,0.1) 0px, rgba(194, 194, 194,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255),rgb(255,255,255));
+    color: var(--color-primary);
+}
+
+/*.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about_me {
+    width: 70%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-primary),
+        transparent
+        );
+        display: grid;
+        transform: rotate(10deg);
+        transition: var(--transition);
+}
+
+.about_me:hover {
+    transform: rotate(0);
+    transition: var(--transition);
+}
+
+.about_me-img {
+    border-radius: 2rem;
+    overflow: hidden;
+}*/
+
+.about_me-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem 0 2rem 0;
+}
+
+.about_me-text > p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    max-width: 75rem;
+    line-height: 2;
+}
+
+.btn-primary {
+    display: flex;
+    margin: 0 auto;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width: 600px) {
+    .about_me-text > p {
+        font-size: 14px;
+        width: 20rem;
+    }
+}

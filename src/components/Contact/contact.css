@@ -1,0 +1,96 @@
+#contact {
+    padding: 10rem 0 10rem 0;
+}
+
+.Toastify__toast-theme--light {
+    background-color: black;
+    border-radius: 0.25rem;
+    color: #000;
+    padding: 0.5rem 0.75rem;
+}
+
+.container.contact_container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact_option {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.contact_option > a {
+    color: var(--color-primary);
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.contact_option > h5 {
+    padding-top: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+    input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-secondary);
+    background: transparent;
+    resize: none;
+    color: var(--color-text);
+    outline-color: grey;
+}
+
+
+.btn-transparent {
+    padding: 1rem 1.5rem;
+}
+
+input::placeholder {
+    color: var(--color-text);
+}
+
+textarea::placeholder {
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 1024px) {
+    .container.contact_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.contact_container {
+        width: var(--container-width-sm);
+    }
+
+    #contact {
+        padding: 5rem 0 5rem 0;
+    }
+}

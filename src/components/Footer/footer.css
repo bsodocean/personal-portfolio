@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+#footer {
+    background: repeating-linear-gradient(45deg, rgba(194, 194, 194,0.1) 0px, rgba(194, 194, 194,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255),rgb(255,255,255));
+    color: black;
+}
+
+.floating_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40vh;
+    padding-bottom: 30vh;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a .footer-icon {
+    font-size: 30px;
+    color: var(--color-primary);
+    line-height: 80px;
+    transition: 0.5s;
+    margin-top: 1.75rem;
+}
+
+ul li a span {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    top: 30px;
+    color: var(--color-primary);
+    padding-left: 0.6rem;
+}
+
+ul li a {
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 250px;
+    height: 80px;
+    background: var(--color-secondary);
+    text-align: left;
+    padding-left: 35px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transition: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #dadada;
+    transition: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+ul li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+ul li:hover .footer-icon {
+    color: var(--color-secondary);
+}
+
+ul li:hover span {
+    color: var(--color-secondary);
+}
+
+ul li:hover:nth-child(1) a{
+    background: #3b5998;
+}
+
+ul li:hover:nth-child(1) a:before{
+    background: #365492;
+}
+
+ul li:hover:nth-child(1) a:after{
+    background: #365492;
+}
+
+ul li:hover:nth-child(2) a{
+    background: var(--color-primary);
+}
+
+ul li:hover:nth-child(2) a:before{
+    background: var(--color-primary);
+}
+
+
+ul li:hover:nth-child(2) a:after{
+    background: var(--color-primary);
+}
+
+ul li:hover:nth-child(3) a{
+    background: #0d1117;
+}
+
+ul li:hover:nth-child(3) a:before{
+    background: #0d1117;
+}
+
+
+ul li:hover:nth-child(3) a:after{
+    background: #0d1117;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .floating_container {
+        padding-top: 20vh;
+        padding-bottom: 50vh;
+    }
+
+    ul {
+        gap: 5rem;
+        flex-direction: column; 
+    }
+}
+
+ 
+ @media screen and (max-width: 600px) {
+     .floating_container {
+        padding: 20vh 0 25vh;
+     }
+
+     ul {
+         gap: 7rem;
+         justify-content: center; 
+     }
+ }
