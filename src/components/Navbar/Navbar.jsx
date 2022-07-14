@@ -4,7 +4,6 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { GiStack } from 'react-icons/gi'
 import { SiAboutdotme } from 'react-icons/si'
 import { IoMdContact } from 'react-icons/io'
-import { GiBrain } from 'react-icons/gi'
 import {useState} from 'react'
 import MaterialToolTip from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
