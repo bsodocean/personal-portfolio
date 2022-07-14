@@ -1,6 +1,7 @@
 import React from 'react'
 import './navbar.css'
 import { AiOutlineHome } from 'react-icons/ai'
+import { GiStack } from 'react-icons/gi'
 import { SiAboutdotme } from 'react-icons/si'
 import { IoMdContact } from 'react-icons/io'
 import { GiBrain } from 'react-icons/gi'
@@ -35,7 +36,7 @@ const Navbar = () => {
       <a href='#about' onClick = {() => setActiveNav('#about')} className = {activeNav === '#about' ? 'active' : ''} ><SiAboutdotme/></a>
       </LightTooltip>
       <LightTooltip title = "Workspace">
-      <a href='#experience' onClick = {() => setActiveNav('#experience')} className = {activeNav === '#experience' ? 'active' : ''}><GiBrain/></a>
+      <a href='#experience' onClick = {() => setActiveNav('#experience')} className = {activeNav === '#experience' ? 'active' : ''}><GiStack/></a>
       </LightTooltip>
       <LightTooltip title = "Contact">
       <a href='#contact' onClick = {() => setActiveNav('#contact')} className = {activeNav === '#contact' ? 'active' : ''} ><IoMdContact/></a>
